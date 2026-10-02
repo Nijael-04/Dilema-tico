@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="DeonTech · AC5 Semana 6 — El dilema que nadie quiere nombrar: Guion v.1 del Podcast Ético Profesional">
+  <meta name="author" content="Equipo DeonTech · UCSUR">
+  <title>DeonTech · AC5 — Podcast Ético · Guion v.1</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- Slide Counter -->
+  <div class="slide-counter" id="slideCounter">
+    <span id="currentSlide">1</span> / <span id="totalSlides">10</span>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="nav-arrow nav-prev" id="prevBtn" onclick="prevSlide()" aria-label="Diapositiva anterior">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button class="nav-arrow nav-next" id="nextBtn" onclick="nextSlide()" aria-label="Siguiente diapositiva">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 6 15 12 9 18"></polyline>
+    </svg>
+  </button>
+
+  <!-- Keyboard Hint -->
+  <div class="keyboard-hint" id="keyboardHint">
+    <span class="key-icon">←</span> <span class="key-icon">→</span> para navegar &nbsp;·&nbsp;
+    <span class="key-icon">F</span> pantalla completa
+  </div>
+
+  <!-- ============ SLIDES ============ -->
+  <div class="slides-container" id="slidesContainer">
+
+    <!-- SLIDE 1: Portada -->
+    <section class="slide slide-cover active" data-slide="1">
+      <div class="cover-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="slide-content cover-content">
+        <div class="cover-badge animate-in" data-delay="0">
+          <span class="badge-dot"></span>
+          AC5 · Semana 6 · Sesión 6
+        </div>
+        <h1 class="cover-title animate-in" data-delay="1">
+          El dilema que nadie<br>quiere <span class="gradient-text">nombrar</span>
+        </h1>
+        <p class="cover-subtitle animate-in" data-delay="2">
+          Guion v.1 del Podcast Ético Profesional
+        </p>
+        <div class="cover-meta animate-in" data-delay="3">
+          <div class="cover-brand">
+            <span class="brand-name">DEON<span class="brand-accent">TECH</span></span>
+            <span class="brand-divider">·</span>
+            <span class="brand-institution">UCSUR 2026-2</span>
+          </div>
+          <div class="cover-course">HUM-010 · Ética y Deontología Profesional</div>
+        </div>
+        <div class="cover-start-hint animate-in" data-delay="4">
+          <span class="pulse-dot"></span>
+          Presiona <span class="key-icon-inline">→</span> para comenzar
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: Propósito -->
+    <section class="slide" data-slide="2">
+      <div class="slide-content">
+        <div class="slide-label animate-in" data-delay="0">Propósito</div>
+        <h2 class="slide-title animate-in" data-delay="1">
+          ¿Para qué sirve <span class="gradient-text">esta actividad</span>?
+        </h2>
+        <div class="content-card-grid animate-in" data-delay="2">
+          <div class="content-card purpose-card">
+            <div class="card-icon">🎙️</div>
+            <h3>Producto: Podcast Ético</h3>
+            <p>El portafolio abre su segundo producto: el <strong>Podcast de dilema ético profesional</strong>. Hoy construimos la primera versión del guion.</p>
+          </div>
+          <div class="content-card purpose-card">
+            <div class="card-icon">⚔️</div>
+            <h3>Estructura argumentativa</h3>
+            <p>Un guion de podcast ético <strong>no es un debate de opiniones</strong>: es una estructura donde dos posiciones filosóficas se enfrentan con rigor.</p>
+          </div>
+          <div class="content-card purpose-card">
+            <div class="card-icon">🧭</div>
+            <h3>Tensión Filosófica</h3>
+            <p>Deber kantiano vs. acción por conveniencia. Este guion se refinará en el <strong>AC6</strong> incorporando el debate <strong>Kant vs. Mill</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: Conexión Teórica -->
+    <section class="slide" data-slide="3">
+      <div class="slide-content">
+        <div class="slide-label animate-in" data-delay="0">Fundamento Filosófico</div>
+        <h2 class="slide-title animate-in" data-delay="1">
+          Conexión <span class="gradient-text">teórica</span>
+        </h2>
+        <div class="theory-cards animate-in" data-delay="2">
+          <div class="theory-card">
+            <div class="theory-number">01</div>
+            <div class="theory-body">
+              <h3>La voluntad buena</h3>
+              <p class="theory-source">Kant, <em>Fundamentación de la metafísica de las costumbres</em> (1785)</p>
+              <p>La única cosa buena sin restricciones es la voluntad buena. El dilema debe mostrar un momento donde <strong>actuar por deber es difícil o costoso</strong>: ahí está el conflicto ético real.</p>
+            </div>
+          </div>
+          <div class="theory-card">
+            <div class="theory-number">02</div>
+            <div class="theory-body">
+              <h3>Ética formal del deber</h3>
+              <p class="theory-source">Kant — Imperativo Categórico</p>
+              <p>El imperativo categórico exige actuar solo según <strong>máximas universalizables</strong>. El personaje kantiano debe articular por qué su acción es un deber, no solo una preferencia.</p>
+            </div>
+          </div>
+          <div class="theory-card">
+            <div class="theory-number">03</div>
+            <div class="theory-body">
+              <h3>Autonomía vs. Heteronomía</h3>
+              <p class="theory-source">Kant — Sesión 6</p>
+              <p><strong>Autonomía</strong>: la voluntad se da su propia ley. <strong>Heteronomía</strong>: la voluntad obedece presiones externas. El conflicto debe visibilizar esta tensión en el entorno profesional peruano.</p>
+            </div>
+          </div>
+          <div class="theory-card">
+            <div class="theory-number">04</div>
+            <div class="theory-body">
+              <h3>Vigilar y castigar</h3>
+              <p class="theory-source">Foucault, <em>Vigilar y castigar</em> (1975)</p>
+              <p>Las instituciones moldean conductas mediante vigilancia. <strong>¿El personaje actúa diferente cuando cree que no lo observan?</strong> Esta pregunta enriquece la escena del podcast.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: El Dilema -->
+    <section class="slide slide-dark" data-slide="4">
+      <div class="slide-content">
+        <div class="slide-label animate-in" data-delay="0">El Corazón del Podcast</div>
+        <h2 class="slide-title animate-in" data-delay="1">
+          El <span class="gradient-text-warm">dilema ético</span> elegido
+        </h2>
+        <div class="dilemma-title animate-in" data-delay="2">
+          <span class="dilemma-icon">🎧</span>
+          <h3>«El Código de la Medicina y el Veneno: Autonomía frente al dolor familiar»</h3>
+        </div>
+        <div class="dilemma-body animate-in" data-delay="3">
+          <p>
+            Un equipo interdisciplinario desarrolla un sistema de software que optimiza drásticamente la producción de una próspera empresa de <strong>cannabis medicinal</strong> en Perú. Sin embargo, al auditar los datos, el <strong>ingeniero líder</strong> descubre que la empresa utiliza la fachada legal del aceite medicinal para encubrir el <strong>cultivo y exportación masiva de droga</strong> para el narcotráfico internacional.
+          </p>
+          <p class="dilemma-highlight">
+            Si denuncia el hecho, las autoridades clausurarán la empresa hoy mismo, deteniendo el delito, pero también <strong>cortando definitivamente el suministro de medicina</strong> para cientos de pacientes, incluyendo a su propia madre, quien depende de estas entregas para tolerar un dolor agudo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: ¿Por qué es un dilema? -->
+    <section class="slide" data-slide="5">
+      <div class="slide-content">
+        <div class="slide-label animate-in" data-delay="0">Análisis Kantiano</div>
+        <h2 class="slide-title animate-in" data-delay="1">
+          ¿Por qué es un <span class="gradient-text">dilema</span> y no solo un problema?
+        </h2>
+        <div class="highlight-box animate-in" data-delay="2">
+          <div class="highlight-icon">⚖️</div>
+          <div class="highlight-content">
+            <p>Porque <strong>no enfrenta simplemente "lo correcto contra lo incorrecto"</strong>, sino que opone:</p>
+            <div class="versus-row">
+              <div class="versus-item versus-duty">
+                <span class="versus-label">Motivación autónoma</span>
+                <p>El deber universalizable de no encubrir el crimen organizado</p>
+              </div>
+              <div class="versus-vs">VS</div>
+              <div class="versus-item versus-hetero">
+                <span class="versus-label">Motivación heterónoma</span>
+                <p>El amor filial y la necesidad de proteger la salud de una madre</p>
+              </div>
+            </div>
+            <p class="highlight-footer">El conflicto ético real estalla porque actuar por el <strong>deber puro</strong> exige aislar las consecuencias y asumir un <strong>costo emocional devastador</strong>, chocando contra las inclinaciones sensibles más profundas del ser humano.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: Personaje A — Kant -->
+    <section class="slide slide-kant" data-slide="6">
+      <div class="slide-content">
+        <div class="slide-label animate-in" data-delay="0">Personaje A</div>
+        <h2 class="slide-title animate-in" data-delay="1">
+          <span class="character-badge kant-badge">DEBER</span>
+          Posición <span class="gradient-text">kantiana</span>
+        </h2>
+        <div class="character-card kant-card animate-in" data-delay="2">
+          <div class="character-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="character-content">
+            <h3>Actúa por deber — El imperativo categórico</h3>
+            <blockquote>
+              «La validez de una acción moral reside en la <strong>máxima universalizable</strong> que la rige y no en sus consecuencias o efectos sensibles.»
+            </blockquote>
+            <div class="argument-points">
+              <div class="arg-point">
+                <span class="arg-marker">→</span>
+                <p>Encubrir el narcotráfico exige <strong>mentir, vulnerar la ley y quebrantar la integridad profesional</strong>.</p>
+              </div>
+              <div class="arg-point">
+                <span class="arg-marker">→</span>
+                <p>Si la máxima <em>«es permisible ocultar delitos graves si con ello protejo a un ser querido»</em> se universalizara, el <strong>estado de derecho colapsaría</strong>.</p>
+              </div>
+              <div class="arg-point">
+                <span class="arg-marker">→</span>
+                <p>La razón impera denunciar con <strong>autonomía</strong>, reconociendo que el deber moral debe estar por encima de los afectos personales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: Personaje B — Heteronomía -->
+    <section class="slide slide-hetero" data-slide="7">
+      <div class="slide-content">
+        <div class="slide-label animate-in" data-delay="0">Personaje B</div>
+        <h2 class="slide-title animate-in" data-delay="1">
+          <span class="character-badge hetero-badge">CONVENIENCIA</span>
+          Posición <span class="gradient-text-warm">heterónoma</span>
+        </h2>
+        <div class="character-card hetero-card animate-in" data-delay="2">
+          <div class="character-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <div class="character-content">
+            <h3>Actúa por conveniencia — Protección y afecto</h3>
+            <blockquote>
+              «El rigorismo ético no puede dar la espalda al <strong>sufrimiento humano tangible</strong> ni a las consecuencias reales e inmediatas.»
+            </blockquote>
+            <div class="argument-points">
+              <div class="arg-point">
+                <span class="arg-marker">→</span>
+                <p>El deber primordial es la <strong>protección de la vida y el alivio del dolor</strong> de las personas.</p>
+              </div>
+              <div class="arg-point">
+                <span class="arg-marker">→</span>
+                <p>Destruir el suministro dejaría desamparados a <strong>cientos de pacientes</strong>, provocando un daño severo, directo e irreversible.</p>
+              </div>
+              <div class="arg-point">
+                <span class="arg-marker">→</span>
+                <p>El silencio y la continuidad representan un <strong>bien superior</strong> en términos del impacto sobre el bienestar y la preservación de la salud.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: La pregunta central -->
+    <section class="slide slide-question" data-slide="8">
+      <div class="slide-content">
+        <div class="question-glow"></div>
+        <div class="slide-label animate-in" data-delay="0">La pregunta que queda sin resolver</div>
+        <div class="central-question animate-in" data-delay="1">
+          <div class="question-mark">?</div>
+          <blockquote class="question-text">
+            Si las obligaciones morales universales deben prevalecer sobre los afectos personales y el sufrimiento humano, <strong>¿es justificable encubrir una red de narcotráfico para proteger la salud y la vida de un familiar</strong>, o el deber exige exponer la verdad independientemente de las trágicas consecuencias que sufra la persona que más amas?
+          </blockquote>
+        </div>
+        <div class="question-footer animate-in" data-delay="2">
+          <p>Esta pregunta articula todo el episodio del podcast y <strong>no tiene respuesta definitiva</strong>: esa es la esencia del dilema ético.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9: Plan de Recursos -->
+    <section class="slide" data-slide="9">
+      <div class="slide-content">
+        <div class="slide-label animate-in" data-delay="0">Producción</div>
+        <h2 class="slide-title animate-in" data-delay="1">
+          Plan de <span class="gradient-text">recursos</span>
+        </h2>
+        <div class="resources-table-wrap animate-in" data-delay="2">
+          <table class="resources-table">
+            <thead>
+              <tr>
+                <th>Recurso / Tarea</th>
+                <th>Responsable</th>
+                <th>Fecha límite</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="task-cell">
+                    <span class="task-icon">🎤</span>
+                    Grabación de audio
+                  </div>
+                </td>
+                <td>Kevin Steven Salcedo Medina</td>
+                <td><span class="date-chip">19/10/2026</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="task-cell">
+                    <span class="task-icon">🎛️</span>
+                    Edición y mezcla
+                  </div>
+                </td>
+                <td>Gabriela Mendoza</td>
+                <td><span class="date-chip">20/10/2026</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="task-cell">
+                    <span class="task-icon">📡</span>
+                    Plataforma de publicación
+                  </div>
+                </td>
+                <td>Naomi Salomé Quiroz Bellido</td>
+                <td><span class="date-chip">22/10/2026</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="task-cell">
+                    <span class="task-icon">🎨</span>
+                    Arte de portada del episodio
+                  </div>
+                </td>
+                <td>Diego Alberto Esquivel Durand</td>
+                <td><span class="date-chip">17/10/2026</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="task-cell">
+                    <span class="task-icon">📝</span>
+                    Revisión final del guion
+                  </div>
+                </td>
+                <td>Manuel Felipe Jara Nieto</td>
+                <td><span class="date-chip">18/10/2026</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="deadline-banner animate-in" data-delay="3">
+          <span class="deadline-icon">⏰</span>
+          El podcast debe estar <strong>publicado antes de la EC2 — Semana 12</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: Equipo / Cierre -->
+    <section class="slide slide-closing" data-slide="10">
+      <div class="cover-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="slide-content cover-content">
+        <div class="slide-label animate-in" data-delay="0">Equipo DeonTech</div>
+        <h2 class="slide-title animate-in" data-delay="1" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">
+          Integrantes del <span class="gradient-text">equipo</span>
+        </h2>
+        <div class="team-grid animate-in" data-delay="2">
+          <div class="team-member">
+            <div class="member-avatar" style="--member-hue: 220;">DE</div>
+            <div class="member-info">
+              <span class="member-name">Diego A. Esquivel Durand</span>
+              <span class="member-career">Ing. de Software</span>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar" style="--member-hue: 160;">MJ</div>
+            <div class="member-info">
+              <span class="member-name">Manuel F. Jara Nieto</span>
+              <span class="member-career">Ing. Empresarial y de Sistemas</span>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar" style="--member-hue: 30;">GM</div>
+            <div class="member-info">
+              <span class="member-name">Gabriela Mendoza</span>
+              <span class="member-career">Agronomía y Negocios</span>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar" style="--member-hue: 300;">NQ</div>
+            <div class="member-info">
+              <span class="member-name">Naomi S. Quiroz Bellido</span>
+              <span class="member-career">Ing. Empresarial y de Sistemas</span>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar" style="--member-hue: 50;">KS</div>
+            <div class="member-info">
+              <span class="member-name">Kevin S. Salcedo Medina</span>
+              <span class="member-career">Ing. Económica y de Negocios</span>
+            </div>
+          </div>
+        </div>
+        <div class="closing-brand animate-in" data-delay="3">
+          <span class="brand-name" style="font-size: 1.4rem;">DEON<span class="brand-accent">TECH</span></span>
+          <span class="closing-tagline">Ética y Deontología Profesional · HUM-010 · UCSUR 2026-2</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Minimap Navigation -->
+  <div class="minimap" id="minimap">
+    <button class="minimap-dot active" data-goto="1" title="Portada"></button>
+    <button class="minimap-dot" data-goto="2" title="Propósito"></button>
+    <button class="minimap-dot" data-goto="3" title="Conexión Teórica"></button>
+    <button class="minimap-dot" data-goto="4" title="El Dilema"></button>
+    <button class="minimap-dot" data-goto="5" title="Análisis Kantiano"></button>
+    <button class="minimap-dot" data-goto="6" title="Personaje A"></button>
+    <button class="minimap-dot" data-goto="7" title="Personaje B"></button>
+    <button class="minimap-dot" data-goto="8" title="Pregunta Central"></button>
+    <button class="minimap-dot" data-goto="9" title="Plan de Recursos"></button>
+    <button class="minimap-dot" data-goto="10" title="Equipo"></button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
